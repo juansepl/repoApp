@@ -73,3 +73,6 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# used to pagination
+gem 'kaminari'
