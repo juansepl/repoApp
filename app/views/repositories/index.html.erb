@@ -6,7 +6,9 @@
   <% @repositories.each do |repository| %>
     <%= render repository %>
     <p>
-      <%= link_to "Show this repository", repository %>
+      <%= link_to "Show", repository %> |
+      <%= link_to "Edit", edit_repository_path(repository) %> |
+      <%= link_to "Destroy", repository, method: :delete %>
     </p>
   <% end %>
 </div>
