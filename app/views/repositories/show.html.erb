@@ -6,5 +6,5 @@
   <%= link_to "Edit this repository", edit_repository_path(@repository) %> |
   <%= link_to "Back to repositories", repositories_path %>
 
-  <%= button_to "Destroy this repository", @repository, method: :delete %>
+  <%= button_to "Destroy this repository", @repository, method: :delete, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}  %>
 </div>
