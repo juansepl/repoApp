@@ -12,8 +12,15 @@
   <% end %>
 
   <div>
-    <%= form.label :id_repo, style: "display: block" %>
-    <%= form.number_field :id_repo %>
+    <div style="display: inline-block">
+      <%= form.label :id_repo, style: "display: block" %>
+      <%= form.number_field :id_repo %>
+    </div>
+    <% if repository.id.present? %>
+      <div style="display: inline-block">
+        <%= form.submit 'Sinchronyze repo', formaction: update_from_api_repository_path(repository.id), method: :patch %>
+      </div>
+    <% end %>
   </div>
 
   <div>
@@ -31,6 +38,8 @@
     <%= form.text_field :url %>
   </div>
 
+  <br/>
+  <br/>
   <div>
     <%= form.submit %>
   </div>

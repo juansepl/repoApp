@@ -65,6 +65,9 @@ group :development do
 
   # create objects dummy
   gem 'faker'
+
+  # debugging the app
+  gem 'pry'
 end
 
 group :test do
@@ -72,7 +75,13 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
+  # Build mocks for objects and API
+  gem 'webmock'
+  # Create contexts by group of tests
+  gem 'shoulda-context'
 end
 
 # used to pagination
 gem 'kaminari'
+# Requests http
+gem 'httparty'

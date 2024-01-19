@@ -2,12 +2,12 @@
 
 one:
   id_repo: 1
-  login: MyString
-  avatar: MyString
-  url: MyString
+  login: NameLogin
+  avatar: https://avatars.githubusercontent.com/u/96130?v=4
+  url: https://api.github.com/users/hawaii
 
 two:
-  id_repo: 1
-  login: MyString
-  avatar: MyString
-  url: MyString
+  id_repo: 2
+  login: NameLogin2
+  avatar: https://avatars.githubusercontent.com/u/96130?v=42
+  url: https://api.github.com/users/hawaii2

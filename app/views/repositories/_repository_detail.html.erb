@@ -1,23 +1,21 @@
 <div id="<%= dom_id repository %>">
-  <span>
+  <p>
     <strong>Id repo:</strong>
     <%= repository.id_repo %>
-  </span>
-  |
+  </p>
 
-  <span>
+  <p>
     <strong>Login:</strong>
     <%= repository.login %>
-  </span>
+  </p>
 
-  <span>
+  <p>
     <strong>Avatar:</strong>
     <%= image_tag(repository.avatar, size: "50x50", alt: "Avatar") %>
-  </span>
-  |
-  <span>
+  </p>
+  <p>
     <strong>Url:</strong>
     <%= link_to(repository.url, repository.url, target: "_blank") %>
-  </span>
+  </p>
 
 </div>
